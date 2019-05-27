@@ -1,0 +1,117 @@
+/* Animacion CSS 
+@keyframes nombreDeLaAnimacion{
+0%{}
+5.6%{}
+10%{}
+50%{}
+100%{}
+}
+*/
+@keyframes caminar1{
+	0%{
+		background-position: 2929px;
+	}
+	100%{
+		background-position: 180px;
+	}
+}
+
+.caballo{
+	background: url("img/Horse-frames.jpg");
+	height: 121px;
+	width: 180px;
+	animation-name: caminar1;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(15);
+}
+
+.caballo:hover{
+	animation-duration: 0.7s;
+}
+
+
+@keyframes caminar2{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 1472px;
+	}
+}
+
+@keyframes caminar3{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 2000px;
+	}
+}
+
+@keyframes avanzar{
+	0%{
+		transform: translateX(0px);
+	}
+	100%{
+		transform: translateX(2200px);
+	}
+}
+
+@keyframes avanzar2{
+	0%{
+		transform: ;
+	}
+	100%{
+		transform: translateX(-2200px);
+	}
+}
+
+
+
+.cartoon1{
+	background: url("img/capguy-walk.png");
+	height: 325px;
+	width: 180px;
+	animation: caminar2 1s infinite steps(8) reverse;
+}
+
+.traslado{
+	animation: avanzar 14s infinite linear;
+	position: absolute;
+	top: 600px;
+	left: -200px;
+}
+
+.zombi{
+	animation: caminar3 1s infinite steps(10) reverse;
+	background: url("img/steps3.png");
+	height: 312px;
+	width: 200px;
+}
+
+.traslado2{
+	animation: avanzar2 14s infinite linear;
+	position: absolute;
+	top: 400px;
+	right: 0px;
+	z-index: -2;
+}
+
+body{
+	background: url("img/natureBG.png");
+	background-size: cover;
+}
+
+.azul{
+	background: url("img/steps2.png");
+	height: 450px;
+	width: 400px;
+	position: absolute;
+	right: 100px;
+	top: 0px;
+}
+
+
+
+
